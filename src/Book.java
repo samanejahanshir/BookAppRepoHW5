@@ -1,10 +1,9 @@
 public abstract class Book {
-    private  String title;
-    private  double price;
+    protected   String title;
+    protected    double price;
 
-    public Book(String title, double price) {
+    public Book(String title) {
         this.title = title;
-        this.price = price;
     }
 
     public String getTitle() {
@@ -15,7 +14,10 @@ public abstract class Book {
         return price;
     }
 
-    public abstract void setPrice(double price);
+    public abstract void setPrice();
 
-
+    @Override
+    public String toString() {
+        return title+"  "+ price;
+    }
 }
