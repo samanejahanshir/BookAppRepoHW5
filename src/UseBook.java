@@ -4,6 +4,8 @@ public class UseBook {
         Book bookNonFiction=new NonFiction("Secret");
         System.out.println(bookFiction.toString());
         System.out.println(bookNonFiction.toString());
+        BookArray bookArray = new BookArray();
+        bookArray.showBook();
 
     }
 }

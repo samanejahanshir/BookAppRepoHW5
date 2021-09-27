@@ -1,14 +1,7 @@
 public class BookArray {
-    public static void main(String[] args) {
-        Book[] books = new Book[10];
-        books = setBook();
-        showBook(books);
+    Book[] books = new Book[10];
 
-
-    }
-
-    public static Book[] setBook() {
-        Book[] books = new Book[10];
+    public BookArray() {
         books[0] = new Fiction("Alice");
         books[1] = new Fiction("Suvashun");
         books[2] = new Fiction("The Prince");
@@ -19,10 +12,10 @@ public class BookArray {
         books[7] = new NonFiction("My Early Life");
         books[8] = new NonFiction("Brief Lives");
         books[9] = new NonFiction("On Liberty");
-        return books;
     }
 
-    public static void showBook(Book[] books) {
+
+    public  void showBook() {
         System.out.println("---------- Books ---------");
 
         for (int i = 0; i < books.length; i++) {
